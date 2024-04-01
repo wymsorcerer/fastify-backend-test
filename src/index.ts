@@ -2,8 +2,10 @@ import fastify from "fastify";
 
 const server = fastify();
 
+const PI = process.env.PI;
+
 server.get("/", async (request, reply) => {
-  return { hello: "world abc" };
+  return { hello: `${PI}` };
 });
 
 server.get("/ping", async (request, reply) => {
