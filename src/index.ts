@@ -3,7 +3,7 @@ import fastify from "fastify";
 const server = fastify();
 
 server.get("/", async (request, reply) => {
-  return { hello: "world" };
+  return { hello: "world abc" };
 });
 
 server.get("/ping", async (request, reply) => {
